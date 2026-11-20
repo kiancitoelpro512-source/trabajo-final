@@ -1,1 +1,173 @@
+# trabajo-final
+/* Fuente principal y fondo de la página */
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8e7;
+    color: #333;
+}
 
+/* Encabezado con degradado verde */
+header {
+    background: linear-gradient(135deg, #2d5016, #4a7c2c, #7cb342);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitulo {
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #7cb342;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #2d5016;
+}
+
+/* Banner con imagen de fondo y overlay oscuro para que se lea el texto */
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600') center/cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.banner h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.banner p {
+    font-size: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+/* Contenedor central que limita el ancho máximo */
+.contenido {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.contenido h2 {
+    color: #2d5016;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Tarjetas de reservas con efecto hover */
+.reserva {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-left: 6px solid #7cb342;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Al pasar el mouse, la tarjeta se eleva */
+.reserva:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Las imágenes ocupan todo el ancho de la tarjeta */
+.reserva img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.reserva h3 {
+    color: #2d5016;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.reserva .ubicacion {
+    color: #7cb342;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.reserva p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Sección informativa con fondo verde claro */
+.info {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 15px;
+    border-left: 6px solid #2d5016;
+}
+
+.info h3 {
+    color: #2d5016;
+    margin-top: 0;
+    font-size: 22px;
+}
+
+/* Lista sin viñetas por defecto */
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Cada elemento de la lista como una tarjeta pequeña */
+.info li {
+    background-color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Pie de página con degradado verde oscuro */
+footer {
+    background: linear-gradient(135deg, #2d5016, #4a7c2c);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 15px;
+}
